@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ci - cd
+  labels:
+    author: sid
+    type: webserver
+spec:
+  containers:
+    - name: myjenkins
+      image: jenkins/jenkins
+...

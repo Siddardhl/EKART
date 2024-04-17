@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd
+  labels:
+    type: webserver
+    author: sid
+spec:
+  containers:
+    - name: myhttpd
+      image: httpd
+...
+
+
