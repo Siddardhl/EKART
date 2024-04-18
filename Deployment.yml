@@ -7,7 +7,7 @@ metadata:
     type: proxy
     author: sid
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       type: proxy
@@ -24,3 +24,4 @@ spec:
             - containerPort: 80
               hostPort: 8080
 ...
+
