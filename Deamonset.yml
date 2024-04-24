@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: httpd-daemon
+  labels:
+    author: sid
+spec:
+  selector:
+    matchLabels:
+      type: webserver
+  template:
+    metadata:
+      name: webserver
+      labels:
+        author: sid
+    spec:
+      containers:
+        - name: myhttpd
+          image: httpd
+...
