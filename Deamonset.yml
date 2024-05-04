@@ -1,6 +1,6 @@
 ---
-apiVersion: apps/v1
-kind: DaemonSet
+apiVersion: tekton.dev/v1beta1apps/v1
+kind: Pipeline
 metadata:
   name: httpd-daemon
   labels:
